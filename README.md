@@ -16,6 +16,27 @@ Here are AI skills, i usually use:
 - [writing-for-agents](https://github.com/mattpocock/skills)
 - [write-a-skill](https://github.com/mattpocock/skills)
 
+## Install `ms-*` skills
+
+Install with the [`skills`](https://github.com/mattpocock/skills) CLI, from inside your project's repo root:
+
+```bash
+# install every ms-* skill
+npx skills@latest add msalettes/skills
+
+# install a single skill
+npx skills@latest add msalettes/skills --skill ms-tdd
+
+# install several at once
+npx skills@latest add msalettes/skills --skill ms-tdd --skill ms-code-review
+```
+
+Some skills need `/ms-setup-skills` run once first (see "Depends on" below). Pull upstream updates later with:
+
+```bash
+npx skills update
+```
+
 ## Mine
 
 For each skill, "Depends on" lists the other skills it explicitly calls via the `Skill` tool or `/`-invokes.
