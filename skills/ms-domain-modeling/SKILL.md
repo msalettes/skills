@@ -5,9 +5,14 @@ description: Build and sharpen a project's domain model. Use when discussing cod
 
 # Domain Modeling
 
-Actively build and sharpen the project's domain model as you design. This is the *active* discipline: challenging terms, inventing edge-case scenarios, and writing the glossary and decisions down the moment they crystallise. (Merely *reading* `CONTEXT.md` for vocabulary is not this skill: that's a one-line habit any skill can do. This skill is for when you're changing the model, not just consuming it.)
+Actively build and sharpen the project's domain model as you design. This is the _active_ discipline: challenging terms, inventing edge-case scenarios, and writing the glossary and decisions down the moment they crystallise. (Merely _reading_ `CONTEXT.md` for vocabulary is not this skill: that's a one-line habit any skill can do. This skill is for when you're changing the model, not just consuming it.)
 
 ## File structure
+
+Before assuming the defaults below, check this repo's own convention: read `.vscode/agents/README.md`, then follow its `domain.md` link
+. `domain.md` is the source of truth when it exists — it records which layout this repo actually uses, plus any repo-specific consumer
+rules (legacy ADR files, "proceed silently" on missing docs, etc.). Fall back to the defaults below only if `.vscode/agents/README.md`
+doesn't exist.
 
 Most repos have a single context:
 
